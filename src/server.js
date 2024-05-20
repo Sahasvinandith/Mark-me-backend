@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.listen(8000,()=>{
-    console.log("Server is listening")
+    console.log("Server is listening to port 8000")
 });
 
 app.get('/data',async (req,res)=>{
