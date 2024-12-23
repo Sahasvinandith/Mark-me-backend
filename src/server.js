@@ -130,6 +130,7 @@ function getRandomNumber(min, max) {
 }
 
 app.post('/', async (req, res) => {
+    console.log("Request sent!!");
     const { registration_number } = req.body;
     const currentTime = moment().format('HH:mm');
     console.log('Received registration number:', registration_number, "at ", currentTime);
